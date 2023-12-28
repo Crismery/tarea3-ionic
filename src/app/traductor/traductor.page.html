@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Traductor</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item>
+    <ion-label position="floating">Número (1-1000)</ion-label>
+    <ion-input [(ngModel)]="numero" type="number"></ion-input>
+  </ion-item>
+
+  <ion-button (click)="traducir()" expand="block">Traducir</ion-button>
+
+  <ion-item>
+    <ion-label>Resultado: {{ resultado }}</ion-label>
+  </ion-item>
+</ion-content>
